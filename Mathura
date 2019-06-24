@@ -1,0 +1,11 @@
+n=input()
+s=len(n)
+c=0
+for i in range(0,len(n)):
+    for j in range(i+1,len(n)):
+        if(n[i]==n[j]):
+            c+=1
+if(c==0):       
+    print(len(n))
+else:
+    print(len(n)-c)
